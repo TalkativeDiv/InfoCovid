@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <!--tab icon-->
+     <link rel="shortcut icon" href="src/assets/logo.svg" type="image/x-icon">
+     <!--Styles-->
+     <link rel="stylesheet" href="dist/styles.css">
+     <!--Font-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+<body>
+     <select id="dlgCountry" onchange="
+     console.log(dlgCountry.value)" class="custom-select">
+     <!--global-->
+       <option value="all" class="options" selected>Global</option>
+       <!--india-->
+       <option value="countries/india" class="options">India</option>
+       <option value="countries/USA" class="options">USA</option>
+       <option value="countries/China" class="options">China</option>  
+       <option value="countries/Indonesia" class="options">Indonesia</option>   
+       <option value="countries/Pakistan" class="options">Pakistan</option>
+       <option value="countries/Nigeria" class="options">Nigeria</option>
+       <option value="countries/Brazil" class="options">Brazil</option>
+       <option value="countries/Bangladesh" class="options">Bangladesh</option>
+       <option value="countries/Russia" class="options">Russia</option>
+       <option value="countries/Mexico" class="options">Mexico</option> 
+       <option value="countries/Japan" class="options">Japan</option>
+       <option value="countries/Ethiopia" class="options">Ethiopia</option>
+       <option value="countries/Philippines" class="options">Philippines</option>
+       <option value="countries/Egypt" class="options">Egypt</option>
+       <option value="countries/Vietnam" class="options">Vietnam</option>
+       <option value="countries/UK" class="options">United Kingdom</option>
+       <option value="countries/France" class="options">France</option>
+       <option value="countries/Italy" class="options">Italy</option>
+       <!--why does the api see south korea as S. KOREA?-->
+       <option value="countries/S. Korea" class="options">South Korea</option>
+       <option value="countries/Canada" class="options">Canada</option>        
+        </select>
+     </br>
+     <table id="covidResults" class="content-table">        
+     </table>
+
+
+     <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  chat-icon="https:&#x2F;&#x2F;github.com&#x2F;TalkitiveDiv&#x2F;infoCovid&#x2F;blob&#x2F;main&#x2F;logo.png?raw=true"
+  intent="WELCOME"
+  chat-title="infoCovid"
+  agent-id="d8338e49-39ec-468d-8b8d-5b50f71aa032"
+  language-code="en"
+></df-messenger>
+<a href = "https://www.google.com/" class = 'repo'>Link to github repo</a>
+     <script src="src/scripts/script.js"></script>
+     <noscript>
+          <div class="modal">
+               <h1 style="size:100%;">hey there</h1>
+               <p>please enable javascript</p>
+               <!--who was so deticated for people to enable js, to make a website about it-->
+               <a href="https://www.enable-javascript.com/">click here to find out how to enable javascript</a>
+             </div>
+        <noscript>
+</body>
+</html>
