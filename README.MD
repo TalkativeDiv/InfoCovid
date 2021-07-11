@@ -16,7 +16,7 @@ InfoCovid is a web app that can track covid data around 20+ countries.
 
 - Simple and Fast
 - Expressive, intuitive.
-- Updates almost evryday
+- Updates almost everyday
 
 ## License
 
