@@ -30,9 +30,7 @@ a {
 }
 
 .repo {
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  bottom: 100;
 }
 
 #header {
@@ -103,6 +101,14 @@ df-messenger {
 
 .modal {
   size: 100%;
+}
+
+input[type="submit"] {
+  font-family: "Font Awesome 5 Free";
+  font-size: 1.3333333333333333em;
+  font-weight: 900;
+  color: #fa5252;
+  border: none;
 }
 
 /*this was originaly a scss file, i mainly wanted scss for variables, even tho css has vars, it is very confusing for me*/

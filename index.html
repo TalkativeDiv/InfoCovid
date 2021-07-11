@@ -5,6 +5,8 @@
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>InfoCovid</title>
+     <!--Font awesome-->
+     <script src="https://kit.fontawesome.com/861898755b.js" crossorigin="anonymous"></script>
      <!--tab icon-->
      <link rel="shortcut icon" href="src/assets/logo.svg" type="image/x-icon">
      <!--Styles-->
@@ -15,7 +17,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
 </head>
 <body>
-   <center><h1 id = "header">Covid Info</h1> </center> 
+   <center><h1 id = "header">Covid Info <i class="fas fa-clinic-medical"></i></h1> </center> 
 
    <center>   <select id="dlgCountry" onchange="
      console.log(dlgCountry.value)" id="custom-select" clas>
@@ -48,13 +50,13 @@
      </table>
      <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
      <df-messenger
-       chat-icon="https:&#x2F;&#x2F;github.com&#x2F;TalkativeDiv&#x2F;InfoCovid&#x2F;blob&#x2F;main&#x2F;src&#x2F;assets&#x2F;logo.png?raw=true"
+       chat-icon="src/assets/question.svg"
        intent="WELCOME"
        chat-title="infoCovid"
        agent-id="d8338e49-39ec-468d-8b8d-5b50f71aa032"
        language-code="en"
      ></df-messenger>
-<a href = "https://github.com/TalkativeDiv/InfoCovid" class = 'repo'>Link to github repo</a>
+<a href = "https://github.com/TalkativeDiv/InfoCovid" class = 'repo'><i class="fas fa-code"></i> Link to github repo</a>
      <script src="src/scripts/script.js"></script>
      <noscript>
           <div class="modal">

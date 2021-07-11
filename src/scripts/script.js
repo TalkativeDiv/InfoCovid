@@ -21,10 +21,10 @@ function showCovidData(data) {
         `<tr>
         <thead class = "noShadow">
         <tr>
-          <th style="width:25%;">Cases</th>
-          <th  style="width:25%;">Today's Cases</th>
-          <th style="width:25%;">Deaths</th>
-          <th style="width:25%;">Recovered</th>
+          <th style="width:25%;"><i class="fas fa-suitcase-rolling"></i> Cases</th>
+          <th  style="width:25%;"><i class="fas fa-briefcase"></i> Today's Cases</th>
+          <th style="width:25%;"><i class="fas fa-skull-crossbones"></i> Deaths</th>
+          <th style="width:25%;"><i class="fas fa-thumbs-up"></i> Recovered</th>
           </tr>
           </thead>
          </tr>`;
