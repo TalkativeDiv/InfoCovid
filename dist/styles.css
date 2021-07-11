@@ -21,8 +21,7 @@ thead,
 th,
 td,
 center,
-#header,
-body {
+#header {
   box-shadow: none;
 }
 

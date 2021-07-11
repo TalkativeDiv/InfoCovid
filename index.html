@@ -15,9 +15,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
 </head>
 <body>
-   <center class="noShadow"><h1 id = "header">Covid Info</h1> </center> 
+   <center><h1 id = "header">Covid Info</h1> </center> 
 
-     <select id="dlgCountry" onchange="
+   <center>   <select id="dlgCountry" onchange="
      console.log(dlgCountry.value)" id="custom-select" clas>
      <!--global-->
        <option value="all" class="options" selected>Global</option>
@@ -43,8 +43,8 @@
        <!--why does the api see south korea as S. KOREA?-->
        <option value="countries/S. Korea" class="options">South Korea</option>
        <option value="countries/Canada" class="options">Canada</option>        
-        </select>
-     <table id="covidResults" class="content-table">        
+        </select></center>
+        <center> <table id="covidResults" class="content-table"></center>      
      </table>
      <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
      <df-messenger
