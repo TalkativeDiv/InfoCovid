@@ -19,7 +19,8 @@ td,
 thead,
 th,
 td,
-body {
+center,
+#header {
   box-shadow: none;
 }
 
@@ -28,7 +29,11 @@ a {
 }
 
 .repo {
-     position: absolute;
-     bottom: 0;
-     left: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+#header {
+  color: $darkRed;
 }

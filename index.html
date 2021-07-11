@@ -4,7 +4,7 @@
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Document</title>
+     <title>InfoCovid</title>
      <!--tab icon-->
      <link rel="shortcut icon" href="src/assets/logo.svg" type="image/x-icon">
      <!--Styles-->
@@ -15,8 +15,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
 </head>
 <body>
+   <center class="noShadow"><h1 id = "header">Covid Info</h1> </center> 
+
      <select id="dlgCountry" onchange="
-     console.log(dlgCountry.value)" class="custom-select">
+     console.log(dlgCountry.value)" id="custom-select" clas>
      <!--global-->
        <option value="all" class="options" selected>Global</option>
        <!--india-->
@@ -42,11 +44,8 @@
        <option value="countries/S. Korea" class="options">South Korea</option>
        <option value="countries/Canada" class="options">Canada</option>        
         </select>
-     </br>
      <table id="covidResults" class="content-table">        
      </table>
-
-
      <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
      <df-messenger
        chat-icon="https:&#x2F;&#x2F;github.com&#x2F;TalkativeDiv&#x2F;InfoCovid&#x2F;blob&#x2F;main&#x2F;src&#x2F;assets&#x2F;logo.png?raw=true"

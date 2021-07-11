@@ -19,20 +19,20 @@ function showCovidData(data) {
    
     let tab = 
         `<tr>
-        <thead>
+        <thead class = "noShadow">
         <tr>
-          <th>Cases</th>
-          <th>Today's Cases</th>
-          <th>Deaths</th>
-          <th>Recovered</th>
+          <th style="width:25%;">Cases</th>
+          <th  style="width:25%;">Today's Cases</th>
+          <th style="width:25%;">Deaths</th>
+          <th style="width:25%;">Recovered</th>
           </tr>
           </thead>
          </tr>`;
          tab += `<tr> 
-         <td>${data.cases} </td>
-         <td>${data.todayCases}</td>
-         <td>${data.deaths}</td> 
-         <td>${data.recovered}</td> 
+         <td class = "noShadow">${data.cases} </td>
+         <td class = "noShadow">${data.todayCases}</td>
+         <td class = "noShadow">${data.deaths}</td> 
+         <td >${data.recovered}</td> 
 
            
              
