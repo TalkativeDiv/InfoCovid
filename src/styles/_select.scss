@@ -9,11 +9,11 @@ select {
   outline: none;
   width: 25%;
   border-color: transparent transparent #fff transparent;
-}
-select:hover {
-  background-color: hsl(0, 94%, 65%);
+  transition:all .5s ease-in-out;
 }
 
 
-
-
+select:hover{
+  background:$red;
+  color:#fff;
+}

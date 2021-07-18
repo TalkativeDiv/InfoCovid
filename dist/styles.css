@@ -84,10 +84,12 @@ select {
   outline: none;
   width: 25%;
   border-color: transparent transparent #fff transparent;
+  transition: all .5s ease-in-out;
 }
 
 select:hover {
-  background-color: #fa5252;
+  background: #fa5252;
+  color: #fff;
 }
 
 df-messenger {
@@ -97,10 +99,6 @@ df-messenger {
   --df-messenger-font-color: white;
   --df-messenger-send-icon: #d40229;
   --df-messenger-user-message: #d40229;
-}
-
-.modal {
-  size: 100%;
 }
 
 input[type="submit"] {
