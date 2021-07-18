@@ -74,6 +74,7 @@ th {
 }
 
 select {
+  -webkit-appearance: none;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -84,11 +85,13 @@ select {
   outline: none;
   width: 25%;
   border-color: transparent transparent #fff transparent;
-  transition: all .5s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background: url(/src/assets/down.svg) no-repeat right #fff;
 }
 
 select:hover {
-  background: #fa5252;
+  background: #fa5252 url(/src/assets/downWhite.svg) no-repeat right;
+  background-color: #fa5252;
   color: #fff;
 }
 
