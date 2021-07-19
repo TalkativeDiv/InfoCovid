@@ -29,10 +29,12 @@ function showCovidData(data) {
           </thead>
          </tr>`;
          tab += `<tr> 
-         <td class = "noShadow">${data.cases} </td>
-         <td class = "noShadow">${data.todayCases}</td>
-         <td class = "noShadow">${data.deaths}</td> 
-         <td >${data.recovered}</td> 
+
+    <tr class = "hoverable">
+    <td >${data.cases} </td>
+    <td>${data.todayCases}</td>
+    <td >${data.deaths}</td> 
+    <td>${data.recovered}</td> </tr>
 
            
              

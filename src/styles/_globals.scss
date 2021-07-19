@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
 html {
   font-size: 100%;
   box-sizing: border-box;
@@ -13,18 +13,6 @@ html {
   font-family: "Varela Round", sans-serif;
   font-weight: bold;
   outline: none;
-  box-shadow: 0 0 20px $shadow;
-}
-
-
-
-td,
-thead,
-th,
-td,
-center,
-#header {
-  box-shadow: none;
 }
 
 a {
@@ -36,5 +24,9 @@ a {
 }
 
 #header {
+  color: $red;
+}
+
+#header:hover {
   color: $darkRed;
 }

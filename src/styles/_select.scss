@@ -12,6 +12,7 @@ select {
   border-color: transparent transparent #fff transparent;
   transition: all 0.3s ease-in-out;
   background: url(/src/assets/down.svg) no-repeat right #fff;
+  box-shadow: 0 0 20px $shadow;
 }
 
 select:hover {

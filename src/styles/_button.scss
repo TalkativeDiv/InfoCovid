@@ -13,6 +13,7 @@
   font-weight: 500;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 20px $shadow;
 }
 
 .button:hover {
@@ -34,5 +35,5 @@
 
 .button__icon{
      font-size: 1.5em;
-     background: rgba(0, 0, 0, 0.08);
+     background: rgba(0, 0, 0, 0.15);
 }

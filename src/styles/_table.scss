@@ -1,16 +1,14 @@
+
+/*table*/
 table,
 th,
 td {
   border: none;
 }
 
-td,
-th {
-  border: none;
-}
 
 .content-table {
-  box-shadow: $shadow;
+  box-shadow: 0 0 20px $shadow;
   width: 75%;
   outline: none;
   border-collapse: collapse;
@@ -34,3 +32,24 @@ th {
   outline: none;
   padding: 12px 15px;
 }
+
+
+tr {
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.hoverable:hover {
+   width: 90%;
+  background-color: #f5f5f5;
+  transform: scale(1.02);
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+}
+

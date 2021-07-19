@@ -15,16 +15,6 @@ html {
   font-family: "Varela Round", sans-serif;
   font-weight: bold;
   outline: none;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-}
-
-td,
-thead,
-th,
-td,
-center,
-#header {
-  box-shadow: none;
 }
 
 a {
@@ -36,22 +26,22 @@ a {
 }
 
 #header {
+  color: #fa5252;
+}
+
+#header:hover {
   color: #d40229;
 }
 
+/*table*/
 table,
 th,
 td {
   border: none;
 }
 
-td,
-th {
-  border: none;
-}
-
 .content-table {
-  box-shadow: rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
   width: 75%;
   outline: none;
   border-collapse: collapse;
@@ -76,6 +66,25 @@ th {
   padding: 12px 15px;
 }
 
+tr {
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.hoverable:hover {
+  width: 90%;
+  background-color: #f5f5f5;
+  transform: scale(1.02);
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+}
+
 select {
   -webkit-appearance: none;
   display: flex;
@@ -90,6 +99,7 @@ select {
   border-color: transparent transparent #fff transparent;
   transition: all 0.3s ease-in-out;
   background: url(/src/assets/down.svg) no-repeat right #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
 select:hover {
@@ -125,6 +135,7 @@ df-messenger:hover {
   font-weight: 500;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
 .button:hover {
@@ -146,7 +157,7 @@ df-messenger:hover {
 
 .button__icon {
   font-size: 1.5em;
-  background: rgba(0, 0, 0, 0.08);
+  background: rgba(0, 0, 0, 0.15);
 }
 
 /*this was originaly a scss file, i mainly wanted scss for variables, even tho css has vars, it is very confusing for me*/
