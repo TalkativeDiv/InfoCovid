@@ -42,7 +42,7 @@ a {
 table,
 th,
 td {
-  border: 1px solid black;
+  border: none;
 }
 
 td,
@@ -51,6 +51,7 @@ th {
 }
 
 .content-table {
+  box-shadow: rgba(0, 0, 0, 0.15);
   width: 75%;
   outline: none;
   border-collapse: collapse;
