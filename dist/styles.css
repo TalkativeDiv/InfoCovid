@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
 html {
   font-size: 100%;
   box-sizing: border-box;
@@ -104,12 +106,46 @@ df-messenger {
   --df-messenger-user-message: #d40229;
 }
 
-input[type="submit"] {
-  font-family: "Font Awesome 5 Free";
-  font-size: 1.3333333333333333em;
-  font-weight: 900;
-  color: #fa5252;
+df-messenger:hover {
+  --df-messenger-button-titlebar-color: #202022;
+}
+
+.button {
+  display: flex;
+  height: 50px;
+  padding: 0;
+  background: #fa5252;
   border: none;
+  outline: none;
+  border-radius: 5px;
+  overflow: hidden;
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: #d40229;
+}
+
+.button:active {
+  background-color: #a2021f;
+}
+
+.button__text,
+.button__icon {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 24px;
+  color: #fff;
+  height: 100%;
+}
+
+.button__icon {
+  font-size: 1.5em;
+  background: rgba(0, 0, 0, 0.08);
 }
 
 /*this was originaly a scss file, i mainly wanted scss for variables, even tho css has vars, it is very confusing for me*/
