@@ -31,9 +31,6 @@ html {
   margin-top: 50px;
   height: calc(100vh - 20em);
   min-height: calc(100vh - 20em);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 button {
