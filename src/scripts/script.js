@@ -1,6 +1,10 @@
 //variables
-const BASE_URL = 'https://corona.lmao.ninja/v2/'
+//dom elems
 const btnRepo = document.getElementById('btnRepo');
+const btnContact = document.getElementById('btnContact');
+//other
+const BASE_URL = 'https://corona.lmao.ninja/v2/'
+const email = "mailto: support@abhirath.net"
 const ghRepo = 'https://github.com/TalkativeDiv/InfoCovid';
 //functions
 let getapi = async (url) => {    
@@ -38,7 +42,7 @@ let showCovidData = (data) => {
     document.getElementById("covidResults").innerHTML = tab; 
 
     }
-
+//event listeners
 dlgCountry.addEventListener('change', () => {
 const url = BASE_URL +dlgCountry.value; 
 // Calling that  function
@@ -51,4 +55,8 @@ window.open(ghRepo);
 }else{
     window.location.href = ghRepo;   
 }
+})
+btnContact.addEventListener('click',(e) =>{
+    if(e.ctrlKey){ window.open(email)}
+    else{window.location = email}
 })
