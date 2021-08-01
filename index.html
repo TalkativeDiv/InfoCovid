@@ -1,90 +1,155 @@
-  
 <!DOCTYPE html>
 <html lang="en">
-<head>
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta name="keywords" content="Covid, tracker, Covid tracker, info">
-     <meta name="description" content="InfoCovid is a web app that can track covid data around 20+ countries.">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Covid Tracker</title>
-     <!--Font awesome-->
-     <script src="https://kit.fontawesome.com/861898755b.js" crossorigin="anonymous"></script>
-     <!--tab icon-->
-     <link rel="shortcut icon" href="src/assets/logo.svg" type="image/x-icon">
-     <!--Styles-->
-     <link rel="stylesheet" href="dist/styles.css">
-     <!--Font-->
-     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-     <!-- Hotjar Tracking Code for https://covidcases.vercel.app/ -->
-<script>
-     (function(h,o,t,j,a,r){
-         h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-         h._hjSettings={hjid:2485013,hjsv:6};
-         a=o.getElementsByTagName('head')[0];
-         r=o.createElement('script');r.async=1;
-         r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-         a.appendChild(r);
-     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
- </script>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="keywords" content="Covid, tracker, Covid tracker, info" />
+    <meta
+      name="description"
+      content="InfoCovid is a web app that can track covid data around 20+ countries."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Covid Tracker</title>
+    <!--Icons-->
+     <link rel="apple-touch-startup-image" href="icons/apple-splash-2048-2732.jpg" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"/> <link rel="apple-touch-startup-image" href="icons/apple-splash-2732-2048.jpg" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"/> <link rel="apple-touch-startup-image" href="icons/apple-splash-1668-2388.jpg" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"/> <link rel="apple-touch-startup-image" href="icons/apple-splash-2388-1668.jpg" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"/> <link rel="apple-touch-startup-image" href="icons/apple-splash-1536-2048.jpg" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"/> <link rel="apple-touch-startup-image" href="icons/apple-splash-2048-1536.jpg" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"/> <link rel="apple-touch-startup-image" href="icons/apple-splash-1668-2224.jpg" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"/> <link rel="apple-touch-startup-image" href="icons/apple-splash-2224-1668.jpg" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"/> <link rel="apple-touch-startup-image" href="icons/apple-splash-1620-2160.jpg" media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"/> <link rel="apple-touch-startup-image" href="icons/apple-splash-2160-1620.jpg" media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"/> <link rel="apple-touch-startup-image" href="icons/apple-splash-1284-2778.jpg" media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"/> <link rel="apple-touch-startup-image" href="icons/apple-splash-2778-1284.jpg" media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"/> <link rel="apple-touch-startup-image" href="icons/apple-splash-1170-2532.jpg" media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"/> <link rel="apple-touch-startup-image" href="icons/apple-splash-2532-1170.jpg" media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"/> <link rel="apple-touch-startup-image" href="icons/apple-splash-1125-2436.jpg" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"/> <link rel="apple-touch-startup-image" href="icons/apple-splash-2436-1125.jpg" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"/> <link rel="apple-touch-startup-image" href="icons/apple-splash-1242-2688.jpg" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"/> <link rel="apple-touch-startup-image" href="icons/apple-splash-2688-1242.jpg" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"/> <link rel="apple-touch-startup-image" href="icons/apple-splash-828-1792.jpg" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"/> <link rel="apple-touch-startup-image" href="icons/apple-splash-1792-828.jpg" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"/> <link rel="apple-touch-startup-image" href="icons/apple-splash-1242-2208.jpg" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"/> <link rel="apple-touch-startup-image" href="icons/apple-splash-2208-1242.jpg" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"/> <link rel="apple-touch-startup-image" href="icons/apple-splash-750-1334.jpg" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"/> <link rel="apple-touch-startup-image" href="icons/apple-splash-1334-750.jpg" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"/> <link rel="apple-touch-startup-image" href="icons/apple-splash-640-1136.jpg" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"/> <link rel="apple-touch-startup-image" href="icons/apple-splash-1136-640.jpg" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"/>
+    <script
+      src="https://kit.fontawesome.com/861898755b.js" defer
+      crossorigin="anonymous"
+    ></script>
+    <link rel="manifest" href="/manifest.json">
+    <!--tab icon-->
+    <link rel="shortcut icon" href="src/assets/logo.svg" type="image/x-icon" />
+    <!--Styles-->
+    <link rel="stylesheet" href="dist/styles.css" />
+    <!-- Hotjar Tracking Code for https://covidcases.vercel.app/ -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 2485013, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet" >
+  </head>
+  <body>
+    <header>
+     <div class="logo-container"> <a href = 'index.html'><img src="/src/assets/logo.svg" style="width: 50px;" alt="logo"></a></div>
 
+     <nav>
+       <ul class="nav-links">
+        <li><a href="/index.html" class="anchor"><i class="fas fa-home"></i> Home</a></li>
+         <li><a href="https://github.com/TalkativeDiv/InfoCovid/issues" class="anchor"><i class="fas fa-exclamation-triangle"></i> Issues</a></li>
+         <li><a href="https://github.com/TalkativeDiv/InfoCovid/discussions/" class="anchor"><i class="fas fa-comments"></i> Discussions</a></li>
+       </ul>
+     </nav>
+     <a class = 'cta'href="mailto: abc@example.com"><button class="contact">Contact</button></a>
+    </header>
 
-   <center><h1 id = "header">Covid Info <ion-icon name="bag-add-outline"></ion-icon></h1> </center> 
-
-   <center>   <select id="dlgCountry" onchange="
-     console.log(dlgCountry.value)" id="custom-select" clas>
-     <!--global-->
-       <option value="all" class="options" selected>Global</option>
-       <!--india-->
-       <option value="countries/india" class="options">India</option>
-       <option value="countries/USA" class="options">USA</option>
-       <option value="countries/China" class="options">China</option>  
-       <option value="countries/Indonesia" class="options">Indonesia</option>   
-       <option value="countries/Pakistan" class="options">Pakistan</option>
-       <option value="countries/Nigeria" class="options">Nigeria</option>
-       <option value="countries/Brazil" class="options">Brazil</option>
-       <option value="countries/Bangladesh" class="options">Bangladesh</option>
-       <option value="countries/Russia" class="options">Russia</option>
-       <option value="countries/Mexico" class="options">Mexico</option> 
-       <option value="countries/Japan" class="options">Japan</option>
-       <option value="countries/Ethiopia" class="options">Ethiopia</option>
-       <option value="countries/Philippines" class="options">Philippines</option>
-       <option value="countries/Egypt" class="options">Egypt</option>
-       <option value="countries/Vietnam" class="options">Vietnam</option>
-       <option value="countries/UK" class="options">United Kingdom</option>
-       <option value="countries/France" class="options">France</option>
-       <option value="countries/Italy" class="options">Italy</option>
-       <!--why does the api see south korea as S. KOREA?-->
-       <option value="countries/S. Korea" class="options">South Korea</option>
-       <option value="countries/Canada" class="options">Canada</option>        
-        </select></center>
-        <center> <table id="covidResults" class="content-table"></center>      
-     </table>
-     <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
      
-     <df-messenger
-       chat-icon="src/assets/chat.svg"
-       intent="WELCOME"
-       chat-title="infoCovid"
-       agent-id="d8338e49-39ec-468d-8b8d-5b50f71aa032"
-       language-code="en"
-     ></df-messenger>
-     <button type="button" class="button" onclick="window.location.href = 'https://github.com/TalkativeDiv/InfoCovid';">
-          <span class="button__text">Github Repo</span>
-          <span class="button__icon">
-           <ion-icon name="code-slash-outline"></ion-icon> 
-          </span>
-        </button>
-     <script src="src/scripts/script.js"></script>
+  <center> <div class="content">
+      <select id="dlgCountry" id="custom-select" clas>
+        <option value="all" class="options" selected>Global</option>
+        <option value="countries/india" class="options">India</option>
+        <option value="countries/USA" class="options">USA</option>
+        <option value="countries/China" class="options">China</option>  
+        <option value="countries/Indonesia" class="options">Indonesia</option>   
+        <option value="countries/Pakistan" class="options">Pakistan</option>
+        <option value="countries/Nigeria" class="options">Nigeria</option>
+        <option value="countries/Brazil" class="options">Brazil</option>
+        <option value="countries/Bangladesh" class="options">Bangladesh</option>
+        <option value="countries/Russia" class="options">Russia</option>
+        <option value="countries/Mexico" class="options">Mexico</option> 
+        <option value="countries/Japan" class="options">Japan</option>
+        <option value="countries/Ethiopia" class="options">Ethiopia</option>
+        <option value="countries/Philippines" class="options">Philippines</option>
+        <option value="countries/Egypt" class="options">Egypt</option>
+        <option value="countries/Vietnam" class="options">Vietnam</option>
+        <option value="countries/UK" class="options">United Kingdom</option>
+        <option value="countries/France" class="options">France</option>
+        <option value="countries/Italy" class="options">Italy</option>
+        <option value="countries/S. Korea" class="options">South Korea</option>
+        <option value="countries/Canada" class="options">Canada</option>        
+         </select>
+         <table id="covidResults" class="content-table"> 
+      </table>
+    
+      <button type="button" class="button" id = "btnRepo">
+           <span class="button__text">Github Repo</span>
+           <span class="button__icon">
+            <ion-icon name="code-slash-outline"></ion-icon> 
+           </span>
+         </button>
+    </div>
+
+        <df-messenger
+        chat-icon="/src/assets/chat.svg"
+        intent="WELCOME"
+        chat-title="infoCovid"
+        agent-id="d8338e49-39ec-468d-8b8d-5b50f71aa032"
+        language-code="en"
+      ></df-messenger>
+      
+
+        <footer class="footer">
+          <div class="inner-footer">
+             <div class="logo-container">
+                <a href = 'index.html'><img src="/src/assets/logo-grey.svg" alt="logo"></a>
+                <span>InfoCovid</span>
+                <br>
+                <br>
+                <p>
+                   Code licensed MIT, docs CC BY 3.0.
+                   Currently v0.024
+                    Made By Abhirath Agasanakoppa
+                </p>
+             </div>
+             <div class="footer-third">
+                <h1><i class="far fa-question-circle"></i> Need Help?</h1>
+                <br>
+                <li> <a href="/src/pages/FAQ.html" class="anchor">FAQ</a></li>
+                <li><a href="mailto: abc@example.com" class="anchor">Contact us!</a></li>
+             </div>
+             <div class="footer-third">
+                <h1><i class="fas fa-users"></i> Community</h1>
+                <br>
+                <li><a href="https://github.com/TalkativeDiv/InfoCovid/issues" class="anchor">Issues</a></li>
+                <li><a href="https://github.com/TalkativeDiv/InfoCovid/discussions/" class="anchor">Discussions</a></li>
+             </footer>
+ 
+          </div>
+       </div>
+       <script>
+        // Check that service workers are supported
+        if ("serviceWorker" in navigator) {
+          // Use the window load event to keep the page load performant
+          window.addEventListener("load", () => {
+            navigator.serviceWorker.register("/src/scripts/sw.js");
+          });
+        }
+      </script>
+       <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1" defer async></script>
+       <script src="src/scripts/script.js" defer async></script>
+     <script defer type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" defer async></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
      <noscript>
           <div class="modal">
                <h1 style="size:100%;">hey there</h1>
                <p>please enable javascript</p>
-               <!--who was so deticated for people to enable js, to make a website about it-->
+                <!-- who was so deticated for people to enable js, to make a website about it-->
                <a href="https://www.enable-javascript.com/">click here to find out how to enable javascript</a>
              </div>
         <noscript>
-</body>
+ 
+  </body>
 </html>
+
+

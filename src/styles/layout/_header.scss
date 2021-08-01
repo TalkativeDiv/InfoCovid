@@ -1,0 +1,60 @@
+li,
+a,
+button {
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 1%;
+  background-color: #202020;
+}
+
+header *{
+margin-top: 1%;
+}
+
+.logo {
+  width: 3%;
+  margin: 10% 10% 10% 10%;
+}
+
+.logo-container{
+  margin-left: 25px;
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.nav-links li a {
+  color: white;
+  transition: all 0.3s ease 0s;
+}
+
+.contact {
+  padding: 9px 20px;
+  background-color: $red;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  margin-right: 25px;
+}
+
+.contact:hover {
+  @include effectGroupHover("hover");
+}
+
+.contact:active {
+  @include effectGroupHover("active");
+}

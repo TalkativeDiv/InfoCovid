@@ -3,6 +3,7 @@
 html {
   font-size: 100%;
   box-sizing: border-box;
+  overflow: visible;
 }
 
 *,
@@ -12,25 +13,28 @@ html {
 }
 
 * {
+  transition: all 0.3s ease-in-out;
   font-family: "Varela Round", sans-serif;
   font-weight: bold;
   outline: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
 }
 
-a {
-  color: #fa5252;
+.anchor {
+  color: #495057;
 }
 
-.repo {
-  bottom: 100;
+.content {
+  margin-top: 50px;
+  height: calc(100vh - 20em);
+  min-height: calc(100vh - 20em);
 }
 
-#header {
-  color: #fa5252;
-}
-
-#header:hover {
-  color: #d40229;
+button {
+  transition: all 0.3s ease-in-out;
 }
 
 /*table*/
@@ -41,7 +45,7 @@ td {
 }
 
 .content-table {
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 5px 5px 10px #cecece, -5px -5px 10px #ffffff;
   width: 75%;
   outline: none;
   border-collapse: collapse;
@@ -86,26 +90,28 @@ td {
 }
 
 select {
-  -webkit-appearance: none;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1 px solid #f2f2f2;
-  border-radius: 3px;
+  border: none;
   padding: 5px 10px;
   color: #000;
   outline: none;
+  margin-top: 10px;
   width: 25%;
-  border-color: transparent transparent #fff transparent;
-  transition: all 0.3s ease-in-out;
-  background: url(/src/assets/down.svg) no-repeat right #fff;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
+  background: #ffffff;
+  box-shadow: 5px 5px 10px #cecece, -5px -5px 10px #ffffff;
 }
 
 select:hover {
-  background: #fa5252 url(/src/assets/downWhite.svg) no-repeat right;
   background-color: #fa5252;
   color: #fff;
+}
+
+.options {
+  border: none;
+  outline: none;
 }
 
 df-messenger {
@@ -115,10 +121,6 @@ df-messenger {
   --df-messenger-font-color: white;
   --df-messenger-send-icon: #d40229;
   --df-messenger-user-message: #d40229;
-}
-
-df-messenger:hover {
-  --df-messenger-button-titlebar-color: #202022;
 }
 
 .button {
@@ -135,15 +137,17 @@ df-messenger:hover {
   font-weight: 500;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 5px 5px 10px #cecece, -5px -5px 10px #ffffff;
 }
 
 .button:hover {
-  background-color: #d40229;
+  transition: all 0.3s ease-in-out;
+  background: linear-gradient(145deg, #bf0225, #e3022c);
 }
 
 .button:active {
-  background-color: #a2021f;
+  transition: all 0.3s ease-in-out;
+  background: linear-gradient(145deg, #92021c, #ad0221);
 }
 
 .button__text,
@@ -158,6 +162,176 @@ df-messenger:hover {
 .button__icon {
   font-size: 1.5em;
   background: rgba(0, 0, 0, 0.15);
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.acordian-container {
+  box-shadow: 20px 20px 20px 20px rgba(0, 0, 0, 0.15);
+}
+
+.accordion {
+  background-color: white;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+.footer {
+  width: 25vw;
+  display: block;
+  overflow: visible;
+  padding: 10px 0;
+  box-sizing: border-box;
+  background-color: #f8f9fa;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.inner-footer {
+  display: block;
+  margin: 0 auto;
+  width: 1100px;
+  height: 100%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  min-height: 100% !important;
+  height: 100%;
+  width: 100%;
+}
+
+.inner-footer .logo-container {
+  width: 35%;
+  float: left;
+  height: 100%;
+  display: block;
+}
+
+.inner-footer .logo-container img {
+  width: 65px;
+  height: auto;
+}
+
+.inner-footer .footer-third {
+  width: calc(21.6666666667% - 20px);
+  margin-right: 10px;
+  float: left;
+  height: 100%;
+}
+
+.inner-footer .footer-third:last-child {
+  margin-right: 0;
+}
+
+.inner-footer .footer-third h1 {
+  font-size: 22px;
+  color: #343a40;
+}
+
+@media (max-width: 600px) {
+  .footer .inner-footer {
+    width: 90%;
+  }
+  .inner-footer .logo-container,
+  .inner-footer .footer-third {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+.anchor:hover {
+  color: #0b5ed7;
+  text-decoration: #0b5ed7 underline;
+}
+
+li,
+a,
+button {
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 1%;
+  background-color: #202020;
+}
+
+header * {
+  margin-top: 1%;
+}
+
+.logo {
+  width: 3%;
+  margin: 10% 10% 10% 10%;
+}
+
+.logo-container {
+  margin-left: 25px;
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.nav-links li a {
+  color: white;
+  transition: all 0.3s ease 0s;
+}
+
+.contact {
+  padding: 9px 20px;
+  background-color: #fa5252;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  margin-right: 25px;
+}
+
+.contact:hover {
+  transition: all 0.3s ease-in-out;
+  background: linear-gradient(145deg, #bf0225, #e3022c);
+}
+
+.contact:active {
+  transition: all 0.3s ease-in-out;
+  background: linear-gradient(145deg, #92021c, #ad0221);
 }
 
 /*this was originaly a scss file, i mainly wanted scss for variables, even tho css has vars, it is very confusing for me*/

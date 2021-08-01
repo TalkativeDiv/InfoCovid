@@ -1,7 +1,19 @@
-@import "variables";
-@import "globals";
-@import "table";
-@import "select";
-@import "messenger";
-@import "button";
+//font
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+//abstracts
+@import "abstracts/variables";
+@import "abstracts/mixins";
+//core
+@import "core/globals";
+//components
+@import "components/table";
+@import "components/select";
+@import "components/messenger";
+@import "components/button";
+@import "components/acordian";
+//layout
+@import "layout/footer";
+@import "layout/header";
+//pages
+@import "pages/about";
 /*this was originaly a scss file, i mainly wanted scss for variables, even tho css has vars, it is very confusing for me*/

@@ -1,21 +1,16 @@
+//variables
 const BASE_URL = 'https://corona.lmao.ninja/v2/'
-
-dlgCountry.addEventListener('change', function(){
-    var url =BASE_URL +dlgCountry.value; 
-// Calling that  function
-getapi(url);
-})
-
-async function getapi(url) {    
+const btnRepo = document.getElementById('btnRepo');
+const ghRepo = 'https://github.com/TalkativeDiv/InfoCovid';
+//functions
+let getapi = async (url) => {    
     // Storing response
     const response = await fetch(url);    
     // Storing data in form of JSON
     var data = await response.json();     
     showCovidData(data);
 }
-
-// Function to define innerHTML for HTML table
-function showCovidData(data) {
+let showCovidData = (data) => {
    
     let tab = 
         `<tr>
@@ -39,10 +34,21 @@ function showCovidData(data) {
            
              
      </tr>`
-    // Loop to access all rows 
+        // Setting innerHTML to the tab variable
     document.getElementById("covidResults").innerHTML = tab; 
 
     }
-    // Setting innerHTML as tab variable
-   
-    document.addEventListener('DOMContentLoaded',getapi(BASE_URL + 'all'));false;
+
+dlgCountry.addEventListener('change', () => {
+const url = BASE_URL +dlgCountry.value; 
+// Calling that  function
+getapi(url);
+})
+document.addEventListener('DOMContentLoaded',getapi(BASE_URL + 'all'));false;
+btnRepo.addEventListener('click', (e) =>{
+if(e.ctrlKey){
+window.open(ghRepo);
+}else{
+    window.location.href = ghRepo;   
+}
+})

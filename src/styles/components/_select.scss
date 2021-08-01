@@ -1,0 +1,24 @@
+select {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  padding: 5px 10px;
+  color: #000;
+  outline: none;
+  margin-top: 10px;
+  width: 25%;
+  border-radius: 3px;
+  background: #ffffff;
+  box-shadow: 5px 5px 10px #cecece, -5px -5px 10px #ffffff;
+}
+
+select:hover {
+  background-color: hsl(0, 94%, 65%);
+  color: #fff;
+}
+
+.options {
+  border: none;
+  outline: none;
+}

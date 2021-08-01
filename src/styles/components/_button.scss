@@ -13,15 +13,18 @@
   font-weight: 500;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-  box-shadow: 0 0 20px $shadow;
+  box-shadow:  5px 5px 10px #cecece,
+  -5px -5px 10px #ffffff;
 }
 
 .button:hover {
-  background-color: $darkRed;
+  @include effectGroupHover('hover');
 }
 
 .button:active {
-  background-color: $darkestRed;
+  @include effectGroupHover('active');
+
+
 }
 
 .button__text,

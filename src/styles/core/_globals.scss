@@ -1,0 +1,34 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+  overflow: visible;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+* {
+  transition: all 0.3s ease-in-out;
+  font-family: "Varela Round", sans-serif;
+  font-weight: bold;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.anchor {
+  color: #495057;
+}
+.content {
+  margin-top: 50px;
+  height: calc(100vh - 20em);
+  min-height: calc(100vh - 20em);
+}
+
+button {
+  transition: all 0.3s ease-in-out;
+}
