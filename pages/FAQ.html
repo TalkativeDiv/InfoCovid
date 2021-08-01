@@ -5,7 +5,7 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>FAQ</title>
-      <link rel="stylesheet" href="/dist/styles.css" />
+      <link rel="stylesheet" href="" />
           <!--Icons-->
     <script
     src="https://kit.fontawesome.com/861898755b.js"
@@ -14,7 +14,7 @@
   <!--tab icon-->
   <link rel="shortcut icon" href="src/assets/logo.svg" type="image/x-icon" />
   <!--Styles-->
-  <link rel="stylesheet" href="dist/styles.css" />
+  <link rel="stylesheet" href="../dist/styles.css" />
   <!-- Hotjar Tracking Code for https://covidcases.vercel.app/ -->
   <script>
     (function (h, o, t, j, a, r) {
@@ -35,7 +35,7 @@
   rel="stylesheet">
    </head>
    <body>
-      <header>
+    <!--  <header>
          <img src="..//assets/logo.svg" alt="logo" class="logo">
         <nav>
           <ul class="nav-links">
@@ -46,29 +46,9 @@
           </ul>
         </nav>
         <a class = 'cta'href="mailto: abc@example.com"><button class="contact">Contact</button></a>
-       </header>
+       </header>-->
 <div class="content">
           
-<script>
-   var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    /* Toggle between adding and removing the "active" class,
-    to highlight the button that controls the panel */
-    this.classList.toggle("active");
-
-    /* Toggle between hiding and showing the active panel */
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
-  });
-}
-</script>
 
    <div class="acordian-container">
       <div class="acordian">
@@ -85,7 +65,7 @@ for (i = 0; i < acc.length; i++) {
          <p>I use a few icon packs. One of them is <a href = 'https://fontawesome.com/' class="anchor">Font Awesome</a>, another one is <a href = 'https://icons.getbootstrap.com/' class="anchor">Bootstrap icons</a> and last is <a href = 'https://ionic.io/ionicons' class="anchor">Ionicons</a>.</p>
       </div>
 </div>
-      <footer class="footer">
+      <!--<footer class="footer">
           <div class="inner-footer">
              <div class="logo-container">
                 <a href = 'index.html'><img src="/src/assets/logo-grey.svg" alt="logo"></a>
@@ -111,9 +91,28 @@ for (i = 0; i < acc.length; i++) {
                 <li><a href="https://github.com/TalkativeDiv/InfoCovid/discussions/" class="anchor">Discussions</a></li>
              </div>
  
-          </footer>
+          </footer>-->
        </div>
-      <script src="src/scripts/acordian.js"></script>
+       <script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function(){
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+       </script>
       <noscript>
           <div class="modal">
                <h1 style="size:100%;">hey there</h1>

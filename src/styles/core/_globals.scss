@@ -22,7 +22,13 @@ html {
 
 .anchor {
   color: #495057;
+  &:hover {
+    color: #0b5ed7;
+    text-decoration: #0b5ed7 underline;
+  }
 }
+
+
 .content {
   margin-top: 50px;
   height: calc(100vh - 20em);
@@ -32,3 +38,4 @@ html {
 button {
   transition: all 0.3s ease-in-out;
 }
+

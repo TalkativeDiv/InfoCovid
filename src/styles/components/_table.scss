@@ -6,8 +6,7 @@ td {
 }
 
 .content-table {
-  box-shadow:  5px 5px 10px #cecece,
-  -5px -5px 10px #ffffff;
+  box-shadow: 5px 5px 10px #cecece, -5px -5px 10px #ffffff;
   width: 75%;
   outline: none;
   border-collapse: collapse;
@@ -16,20 +15,18 @@ td {
   min-width: 400px;
   border-radius: 5px 5px 0 0;
   overflow: hidden;
-}
 
-.content-table thead tr {
-  outline: none;
-  background-color: #fa5251;
-  color: #ffffff;
-  text-align: left;
-  font-weight: bold;
-}
-
-.content-table th,
-.content-table td {
-  outline: none;
-  padding: 12px 15px;
+  thead tr {
+    outline: none;
+    background-color: #fa5251;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+  }
+  th td {
+    outline: none;
+    padding: 12px 15px;
+  }
 }
 
 tr {
@@ -45,8 +42,8 @@ td {
 }
 
 .hoverable:hover {
-  width: 90%;
   background-color: #f5f5f5;
   transform: scale(1.02);
+  padding: 10% 10% 10% 10%;
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
 }

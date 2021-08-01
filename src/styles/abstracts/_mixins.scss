@@ -1,5 +1,4 @@
 @mixin effectGroupHover($type) {
-     transition: all 0.3s ease-in-out;
 @if $type == "hover"{
      background: linear-gradient(145deg, #bf0225, #e3022c);
 }@else{

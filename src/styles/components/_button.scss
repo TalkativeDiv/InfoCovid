@@ -12,22 +12,15 @@
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
+  transition: 0.3s;
   box-shadow:  5px 5px 10px #cecece,
   -5px -5px 10px #ffffff;
-}
-
-.button:hover {
-  @include effectGroupHover('hover');
-}
-
-.button:active {
-  @include effectGroupHover('active');
-
-
-}
-
-.button__text,
+  &:hover {
+    @include effectGroupHover('hover');
+  }&active {
+    @include effectGroupHover('active');
+  }
+  .button__text,
 .button__icon {
   display: inline-flex;
   align-items: center;
@@ -35,8 +28,9 @@
   color: #fff;
   height: 100%;
 }
-
 .button__icon{
-     font-size: 1.5em;
-     background: rgba(0, 0, 0, 0.15);
+  font-size: 1.5em;
+  background: rgba(0, 0, 0, 0.15);
 }
+}
+

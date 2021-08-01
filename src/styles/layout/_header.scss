@@ -49,12 +49,13 @@ margin-top: 1%;
   cursor: pointer;
   transition: all 0.3s ease 0s;
   margin-right: 25px;
+  &:hover {
+    @include effectGroupHover("hover");
+  }
+  &active {
+    @include effectGroupHover("active");
+  }
 }
 
-.contact:hover {
-  @include effectGroupHover("hover");
-}
 
-.contact:active {
-  @include effectGroupHover("active");
-}
+

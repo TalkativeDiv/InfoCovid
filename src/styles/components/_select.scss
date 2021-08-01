@@ -11,14 +11,9 @@ select {
   border-radius: 3px;
   background: #ffffff;
   box-shadow: 5px 5px 10px #cecece, -5px -5px 10px #ffffff;
+  &:hover {
+    background-color: hsl(0, 94%, 65%);
+    color: #fff;
+  }
 }
 
-select:hover {
-  background-color: hsl(0, 94%, 65%);
-  color: #fff;
-}
-
-.options {
-  border: none;
-  outline: none;
-}
