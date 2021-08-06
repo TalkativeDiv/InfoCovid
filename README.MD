@@ -1,7 +1,7 @@
 <div style="display:flex;align-items:center;flex-direction:column">
 <img src="/src/assets/infoCovidRepoCard.jpg" style ="width:50%;">
 <br />
-<a href = "https://abhirath.net"><img src = "/src/assets/coro.svg" style ="width:10rem"></a>
+<a href = "https://abhirath.net"><img src = "/src/assets/coro.svg" style ="width:25em"></a>
 <br />
 <img src="https://img.shields.io/badge/License-MIT-%23D40229" alt="License">
 <br />
